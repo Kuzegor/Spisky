@@ -1,0 +1,6 @@
+route = input().split()
+s = sum([int(i[1:]) for i in route if i[0] == 's'])
+n = sum([int(i[1:]) for i in route if i[0] == 'n'])
+w = sum([int(i[1:]) for i in route if i[0] == 'w'])
+e = sum([int(i[1:]) for i in route if i[0] == 'e'])
+print(f'x: {e - w}, y: {n - s}')
